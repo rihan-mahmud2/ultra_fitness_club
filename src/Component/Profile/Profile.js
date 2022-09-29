@@ -1,10 +1,18 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Logo from "../../Images/download.jpg";
+import { addToBreak } from "../Local/Local";
 
 const Profile = (props) => {
   const [breakTime, setBreakTime] = useState(0);
+  useEffect(() => {
+    const saveBreakTime = localStorage.getItem("Break");
+    if (saveBreakTime) {
+      setBreakTime(saveBreakTime);
+    }
+  }, []);
   const changeBreakTime = (duration) => {
     setBreakTime(duration);
+    addToBreak(duration);
   };
   return (
     <div className="h-full bg-white shadow-2xl ">
