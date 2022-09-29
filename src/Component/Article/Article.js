@@ -34,6 +34,20 @@ const Article = () => {
           </p>
         </div>
       </div>
+      <div
+        tabIndex={0}
+        className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+      >
+        <div className="collapse-title text-xl font-medium">
+          Why do we use UseEffect except data load?
+        </div>
+        <div className="collapse-content">
+          <p>
+            updating the DOM, end-points, setting up subscriptions or timers,
+            etc can be lead to unwarranted side-effects.
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
