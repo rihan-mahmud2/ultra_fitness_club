@@ -28,6 +28,7 @@ const Profile = (props) => {
       </div>
 
       <div>
+        <div className="bg-gray-400 w-[90%] text-center text-2xl mt-7 px-4 mx-auto py-5 rounded-2xl"></div>
         <h1 className="text-xl font-bold text-center">Add a break</h1>
         <div className="bg-gray-400 w-[90%] text-center text-2xl mt-7 px-4 mx-auto py-5 rounded-2xl">
           <small

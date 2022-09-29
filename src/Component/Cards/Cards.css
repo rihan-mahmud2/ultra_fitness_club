@@ -3,3 +3,9 @@
   grid-template-columns: 4fr 1fr;
   gap: 20px;
 }
+
+/* @media (max-width: 600) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+} */
