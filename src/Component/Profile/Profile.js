@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../Images/download.jpg";
 import { addToBreak } from "../Local/Local";
+import Toast from "../Toast/Toast";
 
 const Profile = (props) => {
   const [breakTime, setBreakTime] = useState(0);
@@ -15,7 +16,7 @@ const Profile = (props) => {
     addToBreak(duration);
   };
   return (
-    <div className="h-full bg-white shadow-2xl ">
+    <div className="h-[600px] bg-white shadow-2xl sticky top-0">
       <div className="flex items-center justify-around">
         <img src={Logo} className="w-[100px]" alt=""></img>
         <p className="text-xl relative">
@@ -73,9 +74,8 @@ const Profile = (props) => {
           Break Time <small className="pl-10"> {breakTime}</small>
         </p>
       </div>
-      <button className="btn btn-primary w-[75%] ml-10 mt-10">
-        Activity Completed
-      </button>
+
+      {<Toast></Toast>}
     </div>
   );
 };
