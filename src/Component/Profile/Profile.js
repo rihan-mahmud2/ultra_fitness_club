@@ -28,7 +28,20 @@ const Profile = (props) => {
       </div>
 
       <div>
-        <div className="bg-gray-400 w-[90%] text-center text-2xl mt-7 px-4 mx-auto py-5 rounded-2xl"></div>
+        <div className=" flex justify-between items-center bg-gray-400 w-[90%] text-center text-2xl mt-7 px-4 mx-auto py-5 rounded-xl">
+          <div>
+            <p>Weight</p>
+            <span>65kg</span>
+          </div>
+          <div>
+            <p>Height</p>
+            <span>6feet</span>
+          </div>
+          <div>
+            <p>Age</p>
+            <span>22years</span>
+          </div>
+        </div>
         <h1 className="text-xl font-bold text-center">Add a break</h1>
         <div className="bg-gray-400 w-[90%] text-center text-2xl mt-7 px-4 mx-auto py-5 rounded-2xl">
           <small
