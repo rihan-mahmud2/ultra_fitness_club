@@ -8,6 +8,21 @@ const Article = () => {
         className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
       >
         <div className="collapse-title text-xl font-medium">
+          Differnce between Pops vs State?
+        </div>
+        <div className="collapse-content">
+          <p>
+            Props are used to pass data from one component to another. The state
+            is a local data storage that is local to the component only and
+            cannot be passed to other components
+          </p>
+        </div>
+      </div>
+      <div
+        tabIndex={0}
+        className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box"
+      >
+        <div className="collapse-title text-xl font-medium">
           How does react work?
         </div>
         <div className="collapse-content">
