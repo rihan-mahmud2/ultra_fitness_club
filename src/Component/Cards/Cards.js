@@ -14,14 +14,6 @@ const Cards = () => {
       .then((activities) => setActivities(activities));
   }, []);
 
-  useEffect(() => {
-    const saveTime = localStorage.getItem("Amount");
-    if (saveTime) {
-      console.log(saveTime);
-      setDuration(parseFloat(saveTime));
-    }
-  }, []);
-
   const addToInformation = (time) => {
     setDuration(parseFloat(time) + duration);
     addTo(parseFloat(time) + duration);

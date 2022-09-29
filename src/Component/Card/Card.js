@@ -13,9 +13,6 @@ const Card = ({ activity, addToInformation }) => {
           <h3 className="card-title mb-3 text-2xl">duration: {duration}</h3>
           <h3 className="card-title mb-3 text-2xl">Age: {age}</h3>
 
-          <p className="text-2xl mb-3">
-            If a dog chews shoes whose shoes does he choose?
-          </p>
           <div className="card-actions justify-center">
             <button
               onClick={() => addToInformation(duration)}
