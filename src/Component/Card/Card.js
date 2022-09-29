@@ -21,7 +21,7 @@ const Card = ({ activity, addToInformation }) => {
               onClick={() => addToInformation(duration)}
               className="btn btn-primary w-[75%]"
             >
-              Buy Now
+              Add To List
             </button>
           </div>
         </div>
